@@ -1,5 +1,7 @@
 # Scholarly Hybrid QA ISWC 2024
 
+
+
 ## Overview
 
 The Scholarly Hybrid QA project addresses the Scholarly Hybrid Question Answering over Linked Data (QALD) Challenge at the International Semantic Web Conference (ISWC) 2024. This challenge involves developing Question Answering (QA) systems that integrate and query information from diverse scholarly data sources: DBLP Knowledge Graph, SemOpenAlex Knowledge Graph, and Wikipedia-based texts.
@@ -95,6 +97,8 @@ Our approach involves the following steps:
     Accees the Codalab platform and submit the results.
     ```
 
+
+# THIS IS A DRAFT README TO RESPECT THE DATELINE. THE REAL READMe.md FILE WOULD BE UPLOADED SOON!!!
 ## Results
 
 Our approach demonstrated significant improvements in handling complex queries and providing accurate responses. For detailed results and performance metrics, refer to the `results` directory or consult the article for in-depth analysis.
