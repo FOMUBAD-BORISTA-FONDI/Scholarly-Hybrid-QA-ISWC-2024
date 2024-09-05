@@ -89,18 +89,18 @@ def get_author_info_from_semopenalex(author_name):
 
 def extract_info(author_info, key):
     if author_info is None:
-        return "InformationInformation not available not available"
-    return author_info.get(key, {}).get('value', 'Information not available')
+        return "Not Mentioned"
+    return author_info.get(key, {}).get('value', 'Not Mentioned')
 
 def compare_values(value1, value2, comparison_type):
-    if value1 == "Information not available" or value2 == "Information not available":
-        return "Information not available"
+    if value1 == "Not Mentioned" or value2 == "Not Mentioned":
+        return "Not Mentioned"
 
     try:
         value1 = float(value1)
         value2 = float(value2)
     except ValueError:
-        return "Information not available"
+        return "Not Mentioned"
 
     if comparison_type == "higher":
         return max(value1, value2)
@@ -143,7 +143,7 @@ def get_institution_info_from_semopenalex(institution_uri):
         return None
 
 # Open the output files in write mode
-with open('save-prediction/answers2.txt', 'w', encoding='utf-8') as outfile, \
+with open('save-prediction/prediction-2.txt', 'w', encoding='utf-8') as outfile, \
      open('save-prediction/answers2context.txt', 'w', encoding='utf-8') as outfile_context:
     
     # Write the opening brackets for the JSON arrays
@@ -184,6 +184,10 @@ with open('save-prediction/answers2.txt', 'w', encoding='utf-8') as outfile, \
                     print("inside HIndex")
                     answer = extract_info(author_info, 'hindex')
                     print("The answer of hindex is ", answer )
+                if "Which".lower() in question_text.lower() and "affiliation".lower() in question_text.lower():
+                    print("inside Which HIndex")
+                    answer = extract_info(author_info, 'name')
+                    print("The answer of Which hindex is ", answer )
                 if "i10index".lower() in question_text.lower():
                     print("inside i10index")
                     answer = extract_info(author_info, 'i10Index')
@@ -278,7 +282,7 @@ with open('save-prediction/answers2.txt', 'w', encoding='utf-8') as outfile, \
                         myc2 = extract_info(author_info2, '2YrMeanCitedness')
                         answer = compare_values(myc1, myc2, "higher")
 
-            if answer and answer != "Information not available":
+            if answer and answer != "Not Mentioned":
                 print(f"Answer found: {answer}")
             else:
                 print("No answer found, using LLM")
@@ -288,7 +292,7 @@ with open('save-prediction/answers2.txt', 'w', encoding='utf-8') as outfile, \
 
             if not answer:
                 null_count += 1
-                answer = "No answer found"
+                answer = "Not Mentioned"
 
             print(f"FINAL Answer: {answer}")
 
