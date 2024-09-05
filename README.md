@@ -71,28 +71,28 @@ Our approach involves the following steps:
 
 1. Prepare your SPARQL query files and input datasets.
 
-2. Run the data processing script:
+2. Run the first-script to predict locally:
 
     ```bash
-    python data_processing.py
+    python local-predict.py
     ```
 
 3. Execute the divide and conquer approach:
 
     ```bash
-    python divide_and_conquer.py
+    Access the prediction 2 file and run the scripts to segment the dataset.
     ```
 
 4. Generate predictions using the LLM:
 
     ```bash
-    python run_llm_predictions.py
+    python llm_pert.py file to getresults 
     ```
 
-5. Evaluate the results:
+5. Submit the results:
 
     ```bash
-    python evaluate_results.py
+    Accees the Codalab platform and submit the results.
     ```
 
 ## Results
