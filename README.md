@@ -98,7 +98,7 @@ Our approach involves the following steps:
     ```
 
 
-# THIS IS A DRAFT README TO RESPECT THE DATELINE. THE REAL READMe.md FILE WOULD BE UPLOADED SOON!!!
+# THIS IS A DRAFT README FILE TO RESPECT THE DATELINE. THE REAL READMe.md FILE WOULD BE UPLOADED SOON!!!
 ## Results
 
 Our approach demonstrated significant improvements in handling complex queries and providing accurate responses. For detailed results and performance metrics, refer to the `results` directory or consult the article for in-depth analysis.
