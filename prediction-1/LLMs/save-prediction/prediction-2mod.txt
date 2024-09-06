@@ -1214,4 +1214,5 @@
 {
     "id": "8ea937f0-210a-46e9-b0aa-b1d7f3b0744f",
     "answer": "KU Leuven"
-},
+}
+]
