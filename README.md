@@ -54,7 +54,7 @@ Our approach involves the following steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/scholarly-hybrid-qa-iswc-2024.git
+   git clone https://github.com/FOMUBAD-BORISTA-FONDI/Scholarly-Hybrid-QA-ISWC-2024.git
 ## Installation
 
 1. Navigate to the project directory:
