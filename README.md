@@ -1,7 +1,6 @@
 # Scholarly Hybrid QA ISWC 2024
 
 
-
 ## Overview
 
 The Scholarly Hybrid QA project addresses the Scholarly Hybrid Question Answering over Linked Data (QALD) Challenge at the International Semantic Web Conference (ISWC) 2024. This challenge involves developing Question Answering (QA) systems that integrate and query information from diverse scholarly data sources: DBLP Knowledge Graph, SemOpenAlex Knowledge Graph, and Wikipedia-based texts.
@@ -15,8 +14,6 @@ Our approach combines SPARQL queries, divide and conquer algorithms, and BERT-ba
 - [Installation](#installation)
 - [Usage](#usage)
 - [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
