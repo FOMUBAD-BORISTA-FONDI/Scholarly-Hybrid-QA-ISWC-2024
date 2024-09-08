@@ -22,8 +22,8 @@ def sort_questions_by_text(input_file, output_file):
     except Exception as e:
         print(f"An error occurred: {e}")
 
-# Example usage
-input_file = '/home/borista/Desktop/test-data-breakdown/sch_set2_test_questions.json'
+# usage
+input_file = '../../prediction-1/LLMs/extractcontext/sch_set2_test_questions.json'
 output_file = 'sorted_mod_sch_set2_test_questions.json'
 
 sort_questions_by_text(input_file, output_file)
