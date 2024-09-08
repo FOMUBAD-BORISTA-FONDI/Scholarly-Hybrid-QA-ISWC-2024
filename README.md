@@ -53,14 +53,31 @@ Our approach involves the following steps:
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/FOMUBAD-BORISTA-FONDI/Scholarly-Hybrid-QA-ISWC-2024.git
-## Installation
+    ```bash
+    mkdir schorlaly-qa-2024
+    cd schorlaly-qa-2024
+    git clone https://github.com/FOMUBAD-BORISTA-FONDI/Scholarly-Hybrid-QA-ISWC-2024.git
+   ```
+## Access an run it.
+
+### Getting started
+
+#### Setup environment
+
+2. Create a virtual environment and install the requirements:
+
+    ```bash
+    conda create -n schorlaly-qa-2024 python=3.12.1
+    ```
+
+    ```bash
+    conda activate schorlaly-qa-2024
+    ```
 
 1. Navigate to the project directory:
 
     ```bash
-    cd scholarly-hybrid-qa-iswc-2024
+    cd Scholarly-Hybrid-QA-ISWC-2024
     ```
 
 2. Install the required dependencies:
