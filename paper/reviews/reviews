@@ -1,0 +1,63 @@
+REVIEWER 1
+
+1. (Resolved)======>>>> It would be nice if the authors could include samples of the questions when they describe how they approached different kinds of questions.
+
+2. (Resolved)======>>>> DPR is introduced without the full form or the appropriate citation.
+
+3. (Resolved)======>>>> In some cases, it filled up the RAM and returned "Killed". -> such implementation related details can be excluded from a research paper.
+
+4. (Resolved)======>>>> In figure 1, it would be nice if the 3 branches of predictions would be marked with their sources, like DBLP, SemOpenAlex and Wikipedia.
+
+5. (Resolved)======>>>> Section 2.1 -> what are these SPARQL queries? Some samples are needed.
+
+6. (Resolved)======>>>> What is the role of equation 1 below Figure 2. Is it referred to somewhere in the paper?
+
+
+
+REVIEWER 2
+### Paper Summary
+
+The paper presents a method to answer question over multiple sources of information such as knowledge graphs and encyclopaedia.
+Each question to tackle consists of a natural language question and a focus author.
+For each such question, first the information on the author is queried from all sources. The returned information is cleaned.
+The questions are then separated by multiple criteria:
+1. multiple focus authors
+2. focus of question on institutions or authors
+3. if the question is on authors, the question are subdivided even more based on the information sought
+The queried information from the knowledge graph is combined with the input question to extract an answer using a already trained extractive question answering model.
+Finally, the queried results are combined with the extracted answer.
+Combining queries and LLMs performs the best while only using the queries performs the worst.
+
+
+### Summary of Strengths
+- A working Hybrid question answering method was created
+
+### Summary of Weaknesses
+- Several aspects of the method are not properly explained
+
+### Comments/Suggestions/Typos
+- (Resolved)======>>>> Why is there a star at the end of the title?
+- (Resolved)======>>>> Typos:
+   - (Resolved)======>>>> Abstract
+      - (Resolved)======>>>> "at **the** International”
+   - (Resolved)======>>>> Conclusion
+      - (Resolved)======>>>> “forHybrid”
+   - 2.1
+      - (Resolved)======>>>> “outputs from __the__ the various KGs given.”
+   - (Resolved)======>>>> Introduction
+      - (Resolved)======>>>> “A challenge on Question Answering over Linked Data (QALD) which is hosted at the International SemanticWeb Conference(ISWC) 2024 [5] since 2023.” -  This is not a full sentence.
+- Unclear aspects
+   - (Resolved)======>>>>  I do not fully get the purpose of equation 1, please explain it further
+   - (Resolved)======>>>>  “The data processing involved cleaning the dataset to remove noise” - What is meant by that? Figure 2 does not show what is actually cleaned. Also, how are the knowledge graph responses cleaned? I guess this is also related to equation 1.
+   - (Resolved)======>>>>  How does the detailed sub-classification work? Again based on keywords?
+   - (Resolved)======>>>> “The LLM-generated responses were integrated with the initial query-based results before the final refinement stage to enhance the accuracy and completeness of the answers.” - What are the initial query-based results? In my opinion, it was never stated how the queries are constructed that provide the answers to the questions. Please elaborate on the final refinement.
+   - (Resolved)======>>>> “For questions that had a similar structure, we found that the responses were usually in the same position of the KG” - Is this important for the rest of the work?
+- Comments:
+   - (Resolved)======>>>> Abstract: You do not need to specify the specific BERT model here, just state that you use a pre-trained extractive question answering model
+   - (Resolved)======>>>> Section 2.3: It is not important what underlying data formats you used.  However, it is indeed important how the aggregation works. Furthermore, as the aggregation happens after the LLM-based predictions, the subsection should occur after 2.4.
+   - (Resolved)======>>>> Section 2.4: The used model does not generate, it predicts what spans in the context correspond to the answer.
+   - (Resolved)======>>>> Section 2.4: In my opinion, BERT is no LLM. First, it is not very large. Second, when we talk about LLMs we usually mean generative models, which BERT is not (at least not in the given context )
+   - (Resolved)======>>>> Please put the online resources before the references. You could just add it to the introduction.
+   - (Resolved)======>>>> “In some cases, it filled up the RAM and returned "Killed".” This is not important. It can be removed.
+   - (Resolved)======>>>> “The Scholarly Hybrid Question Answering over Linked Data (QALD) aims to answer questions in scholarly publications provided in natural language [6].” - It is missing that it is about hybrid questions.
+   - (Resolved)======>>>>  Please explain why the model was not fine-tuned on the training data.

@@ -190,7 +190,7 @@ Our approach involves the following steps:
 1. Submit the results:
 
     ```bash
-    Accees the Codalab platform and submit the results.
+    Access the Codalab platform and submit the results.
     ```
 
 ## Results
@@ -198,6 +198,16 @@ Our approach involves the following steps:
 Our approach demonstrated significant improvements in handling complex queries and providing accurate responses. For detailed results and performance metrics, consult the article for in-depth analysis.
 
 Here are some metrics for the results:
+
+###
+
+**F1-Score:** 
+**F1-Score:** 
+
+###
+
+**F1-Score:** 
+**F1-Score:** 
 
 
 

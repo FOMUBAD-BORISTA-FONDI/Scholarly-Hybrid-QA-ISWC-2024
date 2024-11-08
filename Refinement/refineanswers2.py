@@ -1,6 +1,6 @@
 import json
 
-# Load the content of the two files
+# Load the content of the files
 with open('../prediction-3/prediction-3.json', 'r') as file3:
     prediction_3 = json.load(file3)
 
